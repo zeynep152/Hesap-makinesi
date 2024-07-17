@@ -6,28 +6,18 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text" id="display">
-        <div class="keys">
-            <button onclick="append('7')" class="number-7">7</button>
-            <button onclick="append('8')" class="number-8">8</button>
-            <button onclick="append('9')" class="number-9">9</button>
-            <button onclick="append('*')" class="multiplication">*</button>
+        <div class="inputs">
+            <input type="number" id="number1">
+            <input type="number" id="number2">
+       </div>
+       <div class="result-screen" id="result"></div>
+       <div class="keys">
+            <button onclick="result('+')">Toplama</button> 
+            <button onclick="result('-')">Çıkarma</button> 
             <br>
-            <button onclick="append('4')" class="number-4">4</button>
-            <button onclick="append('5')" class="number-5">5</button>
-            <button onclick="append('6')" class="number-6">6</button>
-            <button onclick="append('-')" class="subtraction">-</button>
-            <br>
-            <button onclick="append('1')" class="number-1">1</button>
-            <button onclick="append('2')" class="number-2">2</button>
-            <button onclick="append('3')" class="number-3">3</button>
-            <button onclick="append('+')" class="summation">+</button>
-            <br>
-            <button onclick="clearDisplay()" class="delete">C</button>
-            <button onclick="append('0')" class="number-0">0</button>
-            <button onclick="result()" class="equal">=</button>
-            <button onclick="append('/')" class="division">/</button>
-        </div>
+            <button onclick="result('*')">Çarpma</button> 
+            <button onclick="result('/')">Bölme</button>
+       </div>
     </div>
     <script src="script.js"></script>
 </body>
