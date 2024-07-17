@@ -1,11 +1,21 @@
-function append(value) {
-    document.getElementById('display').value += value;
-}
-function clearDisplay(value) {
-    document.getElementById('display').value = '';
-}
-function result(value) {
-    var displayValue = document.getElementById('display').value;
-    var result = eval(displayValue);
-    document.getElementById('display').value = result;
+function result(type) {
+    var number1 = document. getElementById("number1");
+    var number2 = document. getElementById("number2");
+    var result;
+
+    switch(type) {
+        case "+":
+            result = Number(number1.value) + Number(number2.value);
+            break;
+        case "-":
+            result = Number(number1.value) - Number(number2.value);
+            break;
+        case "*":
+            result = Number(number1.value) * Number(number2.value);
+            break;
+        case "/":
+            result = Number(number1.value) / Number(number2.value);
+            break;
+    }
+    document.getElementById("result").innerHTML = result;
 }
