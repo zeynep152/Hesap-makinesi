@@ -9,13 +9,17 @@ body{
     padding: 20px;
     width: 175px;
 }
-input{
+.inputs{
+    gap: 15px;
+    display: flex;
+}
+input, .result-screen{
     border: 2px solid rgb(2, 43, 53);
     background-color: azure;
     box-sizing: border-box;
     margin-bottom: 15px;
-    text-align: right;
-    font-size: 18px;
+    text-align: center;
+    font-size: 19px;
     height: 30px;
     width: 100%;
 }
@@ -24,7 +28,7 @@ button{
     background-color: rgb(129, 185, 188);
     border: 2px solid rgb(2, 43, 53);
     box-sizing: border-box;
-    width: calc(23% - 6px);
+    width: calc(48% - 6px);
     border-radius: 2px;
     cursor: pointer;
     padding: 10px;
